@@ -1,0 +1,113 @@
+{
+  "rows_raw": 15075,
+  "duplicates_removed": 75,
+  "timeline_duplicate_hours_removed": 0,
+  "invalid_sensor_values_set_to_nan": {
+    "pm2_5": 0,
+    "pm10": 0,
+    "no2": 0,
+    "so2": 0,
+    "o3": 0,
+    "co": 0,
+    "wind": 0,
+    "humidity": 0
+  },
+  "timeline_missing_before": {
+    "pm2_5": 0,
+    "pm10": 0,
+    "no2": 0,
+    "so2": 0,
+    "o3": 0,
+    "co": 0,
+    "temp": 3265,
+    "humidity": 3265,
+    "wind": 3265
+  },
+  "timeline_missing_after": {
+    "pm2_5": 0,
+    "pm10": 0,
+    "no2": 0,
+    "so2": 0,
+    "o3": 0,
+    "co": 0,
+    "temp": 0,
+    "humidity": 0,
+    "wind": 0
+  },
+  "environment_capped": {
+    "pm2_5": {
+      "n_capped": 84,
+      "upper_fence": 149.0
+    },
+    "pm10": {
+      "n_capped": 77,
+      "upper_fence": 179.1
+    },
+    "no2": {
+      "n_capped": 0,
+      "upper_fence": 189.0
+    },
+    "so2": {
+      "n_capped": 0,
+      "upper_fence": 40.6
+    },
+    "o3": {
+      "n_capped": 0,
+      "upper_fence": 414.0
+    },
+    "co": {
+      "n_capped": 150,
+      "upper_fence": 4125.0
+    },
+    "temp": {
+      "n_capped": 284,
+      "upper_fence": 35.0
+    },
+    "humidity": {
+      "n_capped": 117,
+      "upper_fence": 118.0
+    },
+    "wind": {
+      "n_capped": 987,
+      "upper_fence": 9.75
+    }
+  },
+  "rows_without_environment_match": 0,
+  "clinical_missing_before": {
+    "Age": 0,
+    "BMI": 0,
+    "PhysicalActivity": 0,
+    "PollutionExposure": 0,
+    "DustExposure": 0,
+    "LungFunctionFEV1": 0,
+    "Smoking": 0,
+    "PetAllergy": 0,
+    "FamilyHistoryAsthma": 0,
+    "HistoryOfAllergies": 0,
+    "Wheezing": 0,
+    "ShortnessOfBreath": 0,
+    "ChestTightness": 0,
+    "Coughing": 0,
+    "NighttimeSymptoms": 0,
+    "ExerciseInduced": 0
+  },
+  "clinical_missing_after": {
+    "Age": 0,
+    "BMI": 0,
+    "PhysicalActivity": 0,
+    "PollutionExposure": 0,
+    "DustExposure": 0,
+    "LungFunctionFEV1": 0,
+    "Smoking": 0,
+    "PetAllergy": 0,
+    "FamilyHistoryAsthma": 0,
+    "HistoryOfAllergies": 0,
+    "Wheezing": 0,
+    "ShortnessOfBreath": 0,
+    "ChestTightness": 0,
+    "Coughing": 0,
+    "NighttimeSymptoms": 0,
+    "ExerciseInduced": 0
+  },
+  "rows_clean": 15000
+}

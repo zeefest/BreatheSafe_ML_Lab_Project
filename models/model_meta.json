@@ -1,0 +1,161 @@
+{
+  "features": [
+    "Pollution_x_Vulnerability",
+    "Clinical_Vulnerability_Score",
+    "pm2_5",
+    "PollutionExposure",
+    "Smog_Severity_Index",
+    "DustExposure",
+    "pm10",
+    "Rolling_24h_PM25",
+    "PM25_Lag_1d",
+    "Pediatric_Geriatric_Risk_Flag",
+    "NO2_SO2_Synergy_Score",
+    "PhysicalActivity",
+    "Age",
+    "Outdoor_Exposure_Risk_Score",
+    "LungFunctionFEV1",
+    "Atmospheric_Stagnation_Index",
+    "FamilyHistoryAsthma",
+    "no2",
+    "PM25_to_PM10_Ratio",
+    "so2"
+  ],
+  "class_names": [
+    "Low",
+    "Moderate",
+    "High",
+    "Critical"
+  ],
+  "best_model": "SVM (RBF)",
+  "alert_threshold": 0.3,
+  "model_files": {
+    "Random Forest": "random_forest_pipeline.joblib",
+    "Gradient Boosting (XGBoost)": "gradient_boosting_pipeline.joblib",
+    "SVM (RBF)": "svm_pipeline.joblib",
+    "Logistic Regression (baseline)": "logistic_regression_pipeline.joblib"
+  },
+  "uses_xgboost": true,
+  "metrics": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.6747,
+      "Precision": 0.6778,
+      "Recall": 0.6878,
+      "F1": 0.6824,
+      "ROC_AUC": 0.8954,
+      "HighRisk_Recall": 0.8264,
+      "Val_F1": 0.7174,
+      "Val_Accuracy": 0.7058,
+      "CV5_F1_mean": 0.6965,
+      "CV5_F1_std": 0.009,
+      "Train_Time_s": 1.74,
+      "Inference_ms_per_pred": 168.804
+    },
+    {
+      "Model": "Gradient Boosting (XGBoost)",
+      "Accuracy": 0.6902,
+      "Precision": 0.6878,
+      "Recall": 0.708,
+      "F1": 0.6968,
+      "ROC_AUC": 0.9039,
+      "HighRisk_Recall": 0.8347,
+      "Val_F1": 0.7274,
+      "Val_Accuracy": 0.7173,
+      "CV5_F1_mean": 0.706,
+      "CV5_F1_std": 0.0046,
+      "Train_Time_s": 2.24,
+      "Inference_ms_per_pred": 3.453
+    },
+    {
+      "Model": "SVM (RBF)",
+      "Accuracy": 0.6978,
+      "Precision": 0.7139,
+      "Recall": 0.7102,
+      "F1": 0.7119,
+      "ROC_AUC": 0.9113,
+      "HighRisk_Recall": 0.8194,
+      "Val_F1": 0.7408,
+      "Val_Accuracy": 0.728,
+      "CV5_F1_mean": 0.7141,
+      "CV5_F1_std": 0.007,
+      "Train_Time_s": 28.01,
+      "Inference_ms_per_pred": 2.714
+    },
+    {
+      "Model": "Logistic Regression (baseline)",
+      "Accuracy": 0.6858,
+      "Precision": 0.6869,
+      "Recall": 0.7128,
+      "F1": 0.6981,
+      "ROC_AUC": 0.9052,
+      "HighRisk_Recall": 0.8667,
+      "Val_F1": 0.7273,
+      "Val_Accuracy": 0.7173,
+      "CV5_F1_mean": 0.7093,
+      "CV5_F1_std": 0.0054,
+      "Train_Time_s": 0.3,
+      "Inference_ms_per_pred": 1.369
+    }
+  ],
+  "best_params": {
+    "Random Forest": {
+      "n_estimators": 300,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "max_depth": 12
+    },
+    "Gradient Boosting (XGBoost)": {
+      "subsample": 0.8,
+      "n_estimators": 400,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "colsample_bytree": 0.7
+    },
+    "SVM (RBF)": {
+      "gamma": 0.01,
+      "C": 1
+    },
+    "Logistic Regression (baseline)": {
+      "C": 1
+    }
+  },
+  "defaults": {
+    "pm2_5": 38.1,
+    "pm10": 53.7,
+    "no2": 25.9,
+    "so2": 11.3,
+    "o3": 58.0,
+    "temp": 25.9,
+    "humidity": 79.0,
+    "wind": 4.8,
+    "Age": 42.0,
+    "BMI": 27.0744113581517,
+    "Smoking": 0.0,
+    "PhysicalActivity": 4.986471595413569,
+    "PollutionExposure": 5.02187425501895,
+    "DustExposure": 4.914755317984928,
+    "LungFunctionFEV1": 2.5407794471840917,
+    "Wheezing": 1.0,
+    "ShortnessOfBreath": 0.0,
+    "ChestTightness": 0.0,
+    "Coughing": 1.0,
+    "NighttimeSymptoms": 1.0,
+    "ExerciseInduced": 1.0,
+    "PetAllergy": 0.0,
+    "FamilyHistoryAsthma": 0.0,
+    "HistoryOfAllergies": 0.0,
+    "PM25_to_PM10_Ratio": 0.7958801349086118,
+    "Rolling_24h_PM25": 41.41041666666666,
+    "PM25_Lag_1d": 38.2,
+    "Smog_Severity_Index": 49.09166666666667,
+    "Temp_Humidity_Discomfort_Index": 24.6508,
+    "Atmospheric_Stagnation_Index": 0.12671361502347417,
+    "NO2_SO2_Synergy_Score": 0.6697445312500001,
+    "Diurnal_Temp_Range": 8.300000000000004,
+    "Clinical_Vulnerability_Score": 0.31954209788045546,
+    "Pollution_x_Vulnerability": 10.830454161870241,
+    "Pediatric_Geriatric_Risk_Flag": 0.0,
+    "Outdoor_Exposure_Risk_Score": 22.057320681043656
+  }
+}

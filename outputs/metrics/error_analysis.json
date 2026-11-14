@@ -1,0 +1,51 @@
+{
+  "best_model": "SVM (RBF)",
+  "confusion_matrix": [
+    [
+      611,
+      175,
+      2,
+      0
+    ],
+    [
+      148,
+      455,
+      139,
+      0
+    ],
+    [
+      1,
+      129,
+      325,
+      40
+    ],
+    [
+      0,
+      0,
+      46,
+      179
+    ]
+  ],
+  "n_test": 2250,
+  "n_misclassified": 680,
+  "misclassification_rate": 0.3022,
+  "dangerous_false_negatives_high_or_critical_predicted_low_or_moderate": 130,
+  "high_risk_false_negative_rate": 0.1806,
+  "critical_predicted_low_or_moderate": 0,
+  "false_alarms_low_or_moderate_predicted_high_or_critical": 141,
+  "per_class_error_rate": {
+    "Low": 0.2246,
+    "Moderate": 0.3868,
+    "High": 0.3434,
+    "Critical": 0.2044
+  },
+  "top_features_differing_in_errors": {
+    "Clinical_Vulnerability_Score": 0.184,
+    "DustExposure": 0.156,
+    "PM25_to_PM10_Ratio": 0.09,
+    "PollutionExposure": 0.08,
+    "Pediatric_Geriatric_Risk_Flag": 0.065
+  },
+  "mean_pm25_missed_high_risk_cases": 41.28,
+  "mean_pm25_correctly_flagged_high_risk": 70.4
+}

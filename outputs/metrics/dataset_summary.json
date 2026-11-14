@@ -1,0 +1,26 @@
+{
+  "dataset_4_open_meteo": {
+    "records": 11120,
+    "mode": "live Open-Meteo API"
+  },
+  "dataset_2_india_air_quality": {
+    "records": 29531,
+    "mode": "REAL Kaggle file (city_day.csv)"
+  },
+  "dataset_1_global_air_pollution": {
+    "records": 23463,
+    "mode": "REAL Kaggle file (global air pollution dataset.csv)"
+  },
+  "dataset_3_asthma": {
+    "records": 10000,
+    "mode": "REAL Kaggle file (asthma_disease_data.csv), 2,392 rows",
+    "real_rows": 2392
+  },
+  "merged_rows": 15075,
+  "target_distribution": {
+    "Low": 5282,
+    "Moderate": 4969,
+    "High": 3315,
+    "Critical": 1509
+  }
+}
